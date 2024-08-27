@@ -1,0 +1,9 @@
+- name: ------------------ copy -------------------
+  copy:
+    src: namespace.yaml
+    dest: /root
+  tags: namespace
+
+- name: --------------------- kubectl apply  -----------------------
+  command: kubectl apply -f namespace.yaml
+  tags: namespace
