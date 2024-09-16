@@ -2,6 +2,7 @@
   copy:
     src: namespace.yaml
     dest: /root
+    backup: yes
   tags: namespace
 
 - name: --------------------- kubectl apply  -----------------------
